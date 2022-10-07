@@ -7,5 +7,7 @@ import com.app.main.model.Employee;
 
 @Repository
 public interface RepositoryI extends JpaRepository<Employee, Integer> {
+
+	Employee findByName(String name);
 //
 }

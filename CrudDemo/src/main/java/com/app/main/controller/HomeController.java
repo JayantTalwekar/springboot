@@ -47,4 +47,11 @@ public class HomeController {
 		ser.deletedata(id);
 		return "Data deleted Successfully....";
 	}
+	
+	@GetMapping("/get/{name}")
+	public Employee getByName(@PathVariable String name)
+	{
+		Employee e=ser.getByName(name);
+		return e;
+	}
 }

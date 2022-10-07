@@ -29,4 +29,10 @@ public class HomeService implements ServiceI {
 		repo.deleteById(id);
 		
 	}
+
+	@Override
+	public Employee getByName(String name) {
+		
+		return repo.findByName(name);
+	}
 }

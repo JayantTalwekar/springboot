@@ -10,4 +10,6 @@ public interface ServiceI {
 
 	void deletedata(int id);
 
+	Employee getByName(String name);
+
 }
